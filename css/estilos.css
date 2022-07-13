@@ -1,0 +1,330 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+
+/* ----- HERO -----  */
+
+.hero {
+    background-color: #ff8c00;
+    width: 100%;
+    padding-top: 5%;
+    padding-left: 7%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero .nombre-profesion > h1 {
+    font-size: 100px;
+    color: #00825a;
+}
+
+.hero .gif {
+    width: 100%;
+    margin-left: 20%;
+}
+.hero .gif > img {
+    width: 100%;
+}
+
+/* ----- ACERCA DE -----  */
+
+.acerca-de .acerca-de-1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.acerca-de .acerca-de-1 .info {
+    width: 100%;
+    background-color: green;
+    padding: 10%;
+}
+
+.acerca-de .acerca-de-1 .info > h2 {
+    font-size: 50px;
+    text-align: center;
+    color: black;
+}
+
+.acerca-de .acerca-de-1 .info > p {
+    font-size: 30px;
+    text-align: center;
+    line-height: 50px;
+    color: black;
+}
+
+.acerca-de .acerca-de-1 .info > p > b {
+    color: #F0A500;
+}
+
+/* ----- HABILIDADES -----  */
+
+.habilidades {
+    background-color: #D61C4E;
+    padding: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.habilidades .descripcion-habilidades {
+    background-color: #c55170;
+    width: 80%;
+    padding: 5%;
+    margin-right: 5%;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.habilidades .descripcion-habilidades > h2 {
+    color: white;
+    text-align: left;
+    font-size: 60px;
+}
+
+.habilidades .descripcion-habilidades > h3 > ul > li {
+    color: white;
+    font-size: 35px;
+}
+
+.habilidades .gif2 > img {
+    width: 100%;
+    transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+}
+
+.habilidades .gif2 > img:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+/* ----- Footer -----  */
+
+footer {
+    background-color: rgba(192, 192, 192, 0.795);
+    padding-top: 5%;
+    padding-bottom: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+}
+
+footer .iconos-redes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer > h2 {
+    font-size: 60px;
+    margin-bottom: 8%;
+    color: rgb(0, 0, 0);
+}
+
+footer .iconos-redes .fa-whatsapp-square  {
+    color: green;
+    font-size: 150px;
+}
+
+footer .iconos-redes .fa-instagram-square {
+    color: #d410a3;
+    font-size: 150px;
+}
+
+
+/* ----- RESPOSIVE DESING -----  */
+
+@media screen and (max-width: 1100px) {
+    .hero .nombre-profesion > h1 {
+        font-size: 60px;
+        color: #00825a;
+    }
+
+    .acerca-de .acerca-de-1 .info > h2 {
+        font-size: 40px;
+        text-align: center;
+        color: black;
+    }
+
+    .acerca-de .acerca-de-1 .info > p {
+        font-size: 25px;
+        text-align: center;
+        line-height: 50px;
+        color: black;
+    }
+
+    .habilidades .descripcion-habilidades > h2 {
+        color: white;
+        text-align: left;
+        font-size: 40px;
+    }
+
+    .habilidades .descripcion-habilidades > h3 > ul > li {
+        color: white;
+        font-size: 30px;
+    }
+
+    .habilidades .gif2 > img {
+        width: 100%;
+    }
+
+    footer > h2 {
+        font-size: 50px;
+        margin-bottom: 8%;
+        color: rgb(0, 0, 0);
+    }
+
+    footer .iconos-redes .fa-whatsapp-square  {
+        color: green;
+        font-size: 100px;
+    }
+    
+    footer .iconos-redes .fa-instagram-square {
+        color: #d410a3;
+        font-size: 100px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero .nombre-profesion > h1 {
+        width: 80%;
+        font-size: 60px;
+        color: #00825a;
+        margin-bottom: 10%;
+    }
+
+    .hero .gif {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    footer > h2 {
+        font-size: 40px;
+        margin-bottom: 8%;
+        color: rgb(0, 0, 0);
+    }
+
+    .acerca-de .acerca-de-1 .info > h2 {
+        font-size: 40px;
+        text-align: center;
+        color: black;
+    }
+    .acerca-de .acerca-de-1 .info > p {
+        text-align: justify;
+    }
+
+    footer .iconos-redes .fa-whatsapp-square  {
+        color: green;
+        font-size: 70px;
+    }
+    
+    footer .iconos-redes .fa-instagram-square {
+        color: #d410a3;
+        font-size: 70px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero .nombre-profesion > h1 {
+        width: 80%;
+        font-size: 40px;
+        color: #00825a;
+        margin-bottom: 10%;
+    }
+
+    .acerca-de .acerca-de-1 .info > h2 {
+        font-size: 30px;
+        text-align: center;
+        color: black;
+    }
+
+    .acerca-de .acerca-de-1 .info > p {
+        font-size: 20px;
+        text-align: justify;
+        line-height: 40px;
+        color: black;
+    }
+
+    .habilidades {
+        background-color: #D61C4E;
+        padding: 5%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .habilidades .descripcion-habilidades {
+        width: 100%;
+    }
+
+    .habilidades .descripcion-habilidades > h2 {
+        color: white;
+        text-align: left;
+        font-size: 35px;
+    }
+
+    .habilidades .descripcion-habilidades > h3 > ul > li {
+        color: white;
+        font-size: 20px;
+    }
+
+    .habilidades .gif2 > img {
+        width: 100%;
+        margin-top: 5%;
+    }
+
+    .habilidades .gif2 > img:hover {
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+    }
+
+    footer > h2 {
+        font-size: 30px;
+        margin-bottom: 8%;
+        color: rgb(0, 0, 0);
+    }
+
+    footer .iconos-redes .fa-whatsapp-square  {
+        color: green;
+        font-size: 70px;
+    }
+    
+    footer .iconos-redes .fa-instagram-square {
+        color: #d410a3;
+        font-size: 70px;
+    }
+}
